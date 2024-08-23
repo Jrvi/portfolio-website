@@ -6,7 +6,7 @@ const Project = ({ project }) => {
     return (
       <tr>
         <td>
-          <Link to={`/projects/${project.id}`}>{project.name}</Link>
+          {project.name}
         </td>
         <td>{project.description}</td>
         <td>private</td>
