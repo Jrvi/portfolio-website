@@ -8,7 +8,9 @@ const getAll = url => {
     }
 
     const request = axios.get(url, config)
-    return request.then(response => response.data)
+    return request
+        .then(response => response.data)
+        .catch(error => console.log(error))
 }
 
 export default { getAll }
